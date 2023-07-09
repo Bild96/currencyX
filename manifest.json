@@ -1,0 +1,17 @@
+{
+  "name": "Currency Converter",
+  "description": "A simple currency converter extension for Chrome.",
+  "version": "1.0",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["popup.js"]
+    }
+  ],
+  "permissions": ["tabs", "webNavigation"]
+}
+
